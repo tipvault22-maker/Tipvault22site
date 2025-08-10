@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TipVault22 — Voice Books & Smart Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0b0f14;--card:#111827;--txt:#e5e7eb;--accent:#22c55e}
+  *{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#0b0f14,#0e1521);color:var(--txt);font:16px/1.5 Inter,sans-serif}
+  .wrap{max-width:1100px;margin:auto;padding:40px 20px}
+  .hero{display:grid;gap:14px;padding:46px;border:1px solid #1f2937;background:var(--card);border-radius:16px}
+  h1{font-size:38px;line-height:1.1;margin:0}
+  .sub{opacity:.85}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+  a.btn{background:var(--accent);color:#062b12;text-decoration:none;padding:14px 18px;border-radius:10px;font-weight:700}
+  a.ghost{border:1px solid #334155;color:#cbd5e1;padding:14px 18px;border-radius:10px;text-decoration:none}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}
+  .card{background:#0f172a;border:1px solid #1f2937;border-radius:14px;padding:18px}
+  .tag{display:inline-block;font-size:12px;border:1px solid #334155;border-radius:999px;padding:4px 10px;margin-bottom:8px;opacity:.9}
+  footer{opacity:.6;text-align:center;margin:26px 0}
+</style>
+<div class="wrap">
+  <div class="hero">
+    <h1>TipVault22</h1>
+    <p class="sub">AI-powered “Voice Books” + smart storefront. Record in your voice, get instant audio + print. Coming online now.</p>
+    <div class="cta">
+      <a class="btn" href="#notify">Get Early Access</a>
+      <a class="ghost" href="#catalog">Preview Catalog</a>
+    </div>
+  </div>
+
+  <div class="grid" id="catalog">
+    <div class="card"><div class="tag">Voice Book</div><h3>Turn any text into your voice</h3><p>Upload text, pick a voice (yours or ours), receive audio + printable PDF.</p></div>
+    <div class="card"><div class="tag">Print + Merch</div><h3>Books, shirts, mugs</h3><p>Fulfilled on demand. Launch offers rotate daily.</p></div>
+    <div class="card"><div class="tag">Bundles</div><h3>Starter packs</h3><p>Audio + ebook + print. One click checkout.</p></div>
+  </div>
+
+  <div class="card" id="notify" style="margin-top:18px">
+    <h3 style="margin-top:0">Get notified when we open</h3>
+    <form action="https://formspree.io/f/xdovexample" method="POST">
+      <input name="email" type="email" placeholder="you@example.com" required
+        style="width:100%;padding:14px;border-radius:10px;border:1px solid #334155;background:#0b1220;color:#e5e7eb;margin:8px 0">
+      <button type="submit" class="btn">Notify Me</button>
+    </form>
+    <small style="opacity:.7">We’ll only email when we launch.</small>
+  </div>
+
+  <footer>© TipVault22</footer>
+</div>
+</html>
